@@ -117,7 +117,7 @@ module.exports = function(options) {
 };
 ```
 
-## Registering middleware Expressx API 
+## Registering middleware in Expressx API 
 
 You can register middleware in JavaScript code with: 
 
