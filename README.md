@@ -165,7 +165,7 @@ As usual, `app` is the Express application object created by expressx() or merge
 
 The parameters are:
 
-1. route, an optional parameter that specifies the URI route or "mount path" to which the middleware is bound.  When the application receives an HTTP request at this route, it calls (or triggers) the handler function.  See __Specifying routes__.
+1. route, an optional parameter that specifies the URI route or "mount path" to which the middleware is bound.  When the application receives an HTTP request at this route, it calls (or triggers) the handler function.  See [Specifying routes](#specifying-routes).
 2. The middleware handler function (or just "middleware function").  See [Defining a new middleware handler function](#defining-a-new-middleware-handler-function).
 
 For Example:
