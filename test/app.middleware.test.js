@@ -373,6 +373,22 @@ describe('app', function () {
         });
 
 
+        it('should support mouted app', function(done) {
+            // This test verifies that `app.route` triggers sort of layers
+            app.middleware('final', namedHandler('final'));
+            app.get('/test', namedHandler('route'));
+
+            var mounted_app = express();
+            mounted_app.use(namedHandler('initial'));
+            app.middleware('initial', mounted_app);
+
+            executeMiddlewareHandlers(app, '/test', function(err) {
+                if (err) return done(err);
+                expect(steps).to.eql(['initial', 'route', 'final']);
+                done();
+            });
+        });
+
         function namedHandler(name) {
             return function(req, res, next) {
                 steps.push(name);
