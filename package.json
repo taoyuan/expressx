@@ -1,6 +1,6 @@
 {
   "name": "expressx",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "An extension for express application to provide extended middleware support",
   "main": "lib/expressx.js",
   "scripts": {
