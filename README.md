@@ -1,5 +1,8 @@
 expressx
 ====
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/taoyuan/expressx.svg)](https://greenkeeper.io/)
+
 > An extension for express application to provide extended middleware support.
 
 ## Overview
